@@ -9,6 +9,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * mybatis 自定义TypeHandler
+ */
 @MappedJdbcTypes(JdbcType.VARCHAR)
 public class DrafireStringHandler extends BaseTypeHandler<String> {
     @Override

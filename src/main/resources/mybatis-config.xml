@@ -7,6 +7,12 @@
     <typeHandlers>
         <typeHandler handler="com.drafire.testall.handler.DrafireStringHandler"></typeHandler>
     </typeHandlers>
+
+    <plugins>
+        <plugin interceptor="com.drafire.testall.interceptor.DrafirePlugin">
+        </plugin>
+    </plugins>
+
     <environments default="development">
         <environment id="sell">
             <transactionManager type="JDBC"/>

@@ -11,7 +11,20 @@ public class UserService {
     @Autowired
     private UserMapper userMapper;
 
-    public void addUser(User user){
+    public void add(User user){
         userMapper.insert(user);
+    }
+
+    public void update(User user){
+       int res= userMapper.update(user);
+       System.out.println("res="+res);
+    }
+
+    public void prepare(User user){
+        int res= userMapper.update(user);
+    }
+
+    public void setParameters(User user){
+        int res= userMapper.update(user);
     }
 }

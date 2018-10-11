@@ -12,4 +12,10 @@
     values (#{id,jdbcType=INTEGER}, #{amount,jdbcType=DECIMAL}, #{name,jdbcType=VARCHAR}
       )
   </insert>
+
+  <update id="update" parameterType="com.drafire.testall.model.User">
+    UPDATE t_user
+    set amount=#{amount,jdbcType=DECIMAL},name=#{name,jdbcType=VARCHAR}
+    WHERE id=#{id,jdbcType=INTEGER}
+  </update>
 </mapper>
