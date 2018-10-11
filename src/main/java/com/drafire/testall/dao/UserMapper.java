@@ -1,6 +1,6 @@
-package com.tuandai.testall.dao;
+package com.drafire.testall.dao;
 
-import com.tuandai.testall.model.User;
+import com.drafire.testall.model.User;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

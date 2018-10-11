@@ -1,4 +1,4 @@
-package com.tuandai.testall.model;
+package com.drafire.testall.model;
 
 public class User {
     private Integer id;

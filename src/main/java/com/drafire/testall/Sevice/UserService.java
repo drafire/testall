@@ -1,7 +1,7 @@
-package com.tuandai.testall.Sevice;
+package com.drafire.testall.Sevice;
 
-import com.tuandai.testall.dao.UserMapper;
-import com.tuandai.testall.model.User;
+import com.drafire.testall.dao.UserMapper;
+import com.drafire.testall.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

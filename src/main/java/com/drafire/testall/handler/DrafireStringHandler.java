@@ -1,4 +1,4 @@
-package com.tuandai.testall.handler;
+package com.drafire.testall.handler;
 
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;

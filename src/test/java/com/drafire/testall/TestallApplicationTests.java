@@ -1,4 +1,4 @@
-package com.tuandai.testall;
+package com.drafire.testall;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

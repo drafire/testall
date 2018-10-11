@@ -36,7 +36,7 @@ spring:
     store-type: jdbc
 mybatis:
   mapper-locations: classpath:mapping/*.xml
-  type-aliases-package: com.tuandai.model
+  type-aliases-package: com.example.model
   config-location: classpath:mybatis-config.xml    #一定要注明location的位置
   # default-store in spring session. it will be set in redis only outside.
 rabbit:

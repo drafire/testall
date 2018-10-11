@@ -1,4 +1,4 @@
-package com.tuandai.testall;
+package com.drafire.testall;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
