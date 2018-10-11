@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <typeHandlers>
+        <typeHandler handler="com.tuandai.testall.handler.DrafireStringHandler"></typeHandler>
+    </typeHandlers>
+    <environments default="development">
+        <environment id="sell">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${ds.sell.driverClassName}"/>
+                <property name="url" value="${ds.sell.url}"/>
+                <property name="username" value="${ds.sell.username}"/>
+                <property name="password" value="${ds.sell.password}"/>
+            </dataSource>
+        </environment>
+
+        <environment id="bank">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${ds.bank.driverClassName}"></property>
+                <property name="url" value="${ds.bank.url}"></property>
+                <property name="username" value="${ds.bank.username}"></property>
+                <property name="password" value="${ds.bank.password}"></property>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <!--<mapper resource="org/mybatis/example/BlogMapper.xml"/>-->
+    </mappers>
+</configuration>
