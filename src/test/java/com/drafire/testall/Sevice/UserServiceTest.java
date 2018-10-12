@@ -1,6 +1,7 @@
 package com.drafire.testall.Sevice;
 
 import com.drafire.testall.model.User;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,23 +10,24 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)
+@Ignore
 public class UserServiceTest {
 
     @Autowired
     private UserService userService;
 
-    //@Test
+    @Test
     public void addUser() {
-        User user=new User();
-        user.setId(1);
+        User user = new User();
+        user.setId(2);
         user.setAmount(110L);
         user.setName("李四");
         userService.add(user);
     }
 
     @Test
-    public void updateUser(){
-        User user=new User();
+    public void updateUser() {
+        User user = new User();
         user.setId(1);
         user.setAmount(50L);
         user.setName("王五123");
@@ -33,8 +35,8 @@ public class UserServiceTest {
     }
 
     @Test
-    public void prepare(){
-        User user=new User();
+    public void prepare() {
+        User user = new User();
         user.setId(1);
         user.setAmount(50L);
         user.setName("王五123");
@@ -42,11 +44,16 @@ public class UserServiceTest {
     }
 
     @Test
-    public void setParameters(){
-        User user=new User();
+    public void setParameters() {
+        User user = new User();
         user.setId(1);
         user.setAmount(50L);
         user.setName("王五123");
         userService.setParameters(user);
+    }
+
+    @Test
+    public void getUser() {
+        User user = userService.getUser(1);
     }
 }

@@ -10,4 +10,6 @@ public interface UserMapper {
     int insertSelective(User record);
 
     int update(User user);
+
+    User select(int id);
 }

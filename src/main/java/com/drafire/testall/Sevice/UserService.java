@@ -27,4 +27,8 @@ public class UserService {
     public void setParameters(User user){
         int res= userMapper.update(user);
     }
+
+    public User getUser(int id){
+        return userMapper.select(id);
+    }
 }
