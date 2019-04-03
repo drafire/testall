@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
@@ -60,11 +61,19 @@ public class UserServiceTest {
     }
 
     @Test
+    @Ignore
     public void getUserBySqlSession() {
         try {
             userService.getUserBySqlSession(1);
         } catch (IOException e) {
             System.out.println(e);
         }
+    }
+
+    @Test
+    public void getUserBean() {
+        Object myUserBean = new ClassPathXmlApplicationContext("classpath:Test.xml").getBean("myUserBean");
+        User user = (User) myUserBean;
+        System.out.println(user);
     }
 }

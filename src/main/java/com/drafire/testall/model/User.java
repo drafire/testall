@@ -30,4 +30,24 @@ public class User {
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
     }
+
+    public User() {
+    }
+
+    public User(Integer id, Long amount, String name) {
+
+
+        this.id = id;
+        this.amount = amount;
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", amount=" + amount +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
